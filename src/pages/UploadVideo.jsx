@@ -21,7 +21,7 @@ const UploadVideo = () => {
     formData.append("title", title);
 
     try {
-      const response = await fetch("https://testdrm-backend.onrender.com/api/videos", {
+      const response = await fetch(`https://testdrm-backend.onrender.com/api/videos/`, {
         method: "POST",
         body: formData,
       });
